@@ -1,0 +1,27 @@
+import java.util.*;  
+public class TestJavaCollection7{  
+public static void main(String args[]){  
+//Creating HashSet and adding elements  
+HashSet<String> set=new HashSet<String>();  
+set.add("Ravi");  
+set.add("Vijay");  
+set.add("Ravi");  
+set.add("Ajay");  
+//Traversing elements  
+Iterator<String> itr=set.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+
+set.remove(2); //deleting element
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+
+if (set.contains("Vijay")) {
+    System.out.println("Found the element");
+} else {
+    System.out.println("There is no such element");
+}
+}  
+}  
