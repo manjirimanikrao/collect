@@ -1,0 +1,4 @@
+#!/bin/bash
+for p in $(cat test.txt); do
+echo $p
+done
